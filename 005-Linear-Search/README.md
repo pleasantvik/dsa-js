@@ -24,4 +24,9 @@
 
 ## Big O
 
+`BEST CASE`
+0(1)
+
+`WORST CASE` and `Average Case`
+
 - Its O(n): It grows as value of n grows
