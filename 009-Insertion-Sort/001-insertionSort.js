@@ -8,7 +8,6 @@ export function insertionSort(arr) {
 
     for (let j = i - 1; j >= 0 && arr[j] > currentVal; j--) {
       if (currentVal < arr[j]) {
-        console.log("swap");
         swap(arr, j + 1, j);
       }
 
