@@ -4,7 +4,7 @@
 
  */
 
-var removeDuplicates = function (nums) {
+let removeDuplicates = function (nums) {
   let pointerOne = 0;
   if (nums.length === 0) {
     return 0;
@@ -18,3 +18,5 @@ var removeDuplicates = function (nums) {
 
   return pointerOne + 1;
 };
+
+console.log(removeDuplicates([1, 2, 2, 3]));
