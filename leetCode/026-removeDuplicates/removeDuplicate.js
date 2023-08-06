@@ -4,7 +4,7 @@
 
  */
 
-let removeDuplicates = function (nums) {
+export const removeDuplicates = function (nums) {
   let pointerOne = 0;
   if (nums.length === 0) {
     return 0;
