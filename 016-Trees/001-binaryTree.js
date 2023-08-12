@@ -69,3 +69,4 @@ tree.insert(14);
 console.log(tree);
 
 console.log(tree.find(2));
+console.log(tree.find(3));
