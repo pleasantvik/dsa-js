@@ -5,31 +5,26 @@ export function binarySearch(arr, target) {
   let rightPosiition = arr.length - 1;
   let middle = Math.floor((leftPosition + rightPosiition) / 2);
 
-  //   while (leftPosition < rightPosiition) {
-  //     middle = Math.floor((leftPosition + rightPosiition) / 2);
-
-  //     if (arr[middle] === target) {
-  //       return middle;
-  //     } else if (arr[middle] < target) {
-  //       leftPosition = middle + 1;
-  //     } else {
-  //       rightPosiition = middle - 1;
-  //     }
-  //   }
-
-  while (arr[middle] !== target) {
+  while (leftPosition <= rightPosiition) {
     if (target < arr[middle]) {
       rightPosiition = middle - 1;
-    } else {
+    } else if (target > arr[middle]) {
       leftPosition = middle + 1;
+    } else if (target === arr[middle]) {
+      return middle;
     }
     middle = Math.floor((leftPosition + rightPosiition) / 2);
   }
 
-  return arr[middle] === target ? middle : -1;
+  if (arr[middle] === target) {
+    return middle;
+  } else {
+    return -1;
+  }
+  // return arr[middle] === target ? middle : -1;
 }
 
 // console.log(binarySearch([1, 2, 3, 4, 5], 4));
 
-console.log(binarySearch([1, 2, 3, 4, 88, 102, 576], 102));
+console.log(binarySearch([1, 2, 3, 4, 88, 102, 576], 9000));
 // console.log(binarySearch([3, 2, 1], 1));

@@ -159,9 +159,8 @@ class SinglyLinkedList {
 
       return true;
     }
-   */
-
     return false;
+   */
   }
 
   insert(index, val) {

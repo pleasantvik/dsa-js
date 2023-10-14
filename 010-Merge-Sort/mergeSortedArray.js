@@ -29,7 +29,7 @@ function mergeFunc(arr1, arr2) {
 console.log(mergeFunc([100], [2, 4, 6]));
 
 const mergeSort = (arr) => {
-  //BAse case
+  //Base case
   if (arr.length <= 1) return arr;
 
   let mid = Math.floor(arr.length / 2);
